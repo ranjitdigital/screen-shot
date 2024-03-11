@@ -11,6 +11,10 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   next();
 });
+app.get("/check",(req, res) => {
+  res.send("hello world");
+  
+});
 
 // Route to capture screenshot
 app.get('/capture-screenshot', async (req, res) => {
