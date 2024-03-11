@@ -11,8 +11,12 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   next();
 });
-app.get("/check",(req, res) => {
+app.get("/",(req, res) => {
   res.send("hello world");
+  
+});
+app.get("/check",(req, res) => {
+  res.send("Api Check");
   
 });
 
